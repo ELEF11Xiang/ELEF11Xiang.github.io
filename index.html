@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="相依依的个人主页 / Yiyi Xiang's personal website" />
+  <title>相依依 / Yiyi Xiang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到首页">
+        <span class="brand-mark">YY</span>
+        <span class="brand-name">相依依 <small>/ YIYI XIANG</small></span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a class="nav-link active" href="#home" data-page-link="home"><span>01</span><b data-i18n="nav.home">首页</b></a>
+        <a class="nav-link" href="#about" data-page-link="about"><span>02</span><b data-i18n="nav.about">关于我</b></a>
+        <a class="nav-link" href="#archive" data-page-link="archive"><span>03</span><b data-i18n="nav.archive">图像档案</b></a>
+        <a class="nav-link" href="#notes" data-page-link="notes"><span>04</span><b data-i18n="nav.notes">随笔</b></a>
+      </nav>
+      <button class="language-switch" type="button" data-language-toggle aria-label="切换语言"><span class="language-cn">中</span><i></i><span class="language-en">EN</span></button>
+    </header>
+
+    <main>
+      <section class="page active-page" data-page="home">
+        <div class="home-grid">
+          <div class="home-copy reveal">
+            <p class="eyebrow"><span class="dot"></span><span data-i18n="home.eyebrow">上海 · 25级德语系</span></p>
+            <h1><span data-i18n="home.titleOne">你好，</span><br /><em data-i18n="home.titleTwo">我是相依依。</em></h1>
+            <p class="intro" data-i18n="home.intro">喜欢看现场，也喜欢织毛线、听音乐。<br />在阅读、写字和游戏之间，慢慢找到自己的节奏。</p>
+            <div class="home-actions"><a class="button button-dark" href="#about"><span data-i18n="home.cta">认识我</span><span>↗</span></a><a class="text-link" href="#archive" data-i18n="home.secondary">看我的收藏</a></div>
+          </div>
+          <div class="home-visual reveal reveal-delay">
+            <div class="portrait-card">
+              <img class="portrait-image" src="../../个人网页资料/图片集/头像/mmexport1788420218292.jpg" alt="相依依的头像照片" />
+              <div class="portrait-sun"></div>
+              <div class="portrait-text">LOOKING<br />FOR<br /><i>BEAUTY</i></div>
+              <div class="portrait-stamp">SH / 2026<br /><strong>01</strong></div>
+            </div>
+            <div class="side-note"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span></div>
+          </div>
+        </div>
+        <div class="home-footer"><span data-i18n="home.footer">一个正在长大的人的小小角落</span><span>© 2026 YY</span></div>
+      </section>
+
+      <section class="page" data-page="about">
+        <div class="page-heading reveal"><p class="eyebrow"><span class="dot"></span><span data-i18n="about.eyebrow">About me / 关于我</span></p><h2 data-i18n="about.title">把好奇心<br /><em>变成方向。</em></h2></div>
+        <div class="about-layout">
+          <div class="about-manifesto reveal"><div class="quote-mark">“</div><p data-i18n="about.quote">在很多事情同时发生的时候，愿意把脚下的每一步走清楚，也希望自己少焦虑一点。</p><div class="signature">YIYI<br /><span>XIANG</span></div></div>
+          <div class="bio-list reveal reveal-delay">
+            <div class="bio-row"><span data-i18n="about.nameLabel">姓名</span><strong data-i18n="about.name">相依依</strong></div>
+            <div class="bio-row"><span data-i18n="about.schoolLabel">身份</span><strong data-i18n="about.school">上海交通大学 · 25级德语系本科生</strong></div>
+            <div class="bio-row"><span data-i18n="about.interestLabel">兴趣</span><strong data-i18n="about.interest">看现场 / 织毛线 / 听音乐 / 阅读 / 写字 / 打游戏</strong></div>
+            <div class="bio-row"><span data-i18n="about.focusLabel">正在处理</span><strong><i class="tag">大创</i><i class="tag">艺术中心</i><i class="tag">未来规划</i></strong></div>
+          </div>
+        </div>
+        <div class="about-bottom"><span>01—04</span><span data-i18n="about.bottom">在上海学习德语，也学习如何观察生活。</span></div>
+      </section>
+
+      <section class="page" data-page="archive">
+        <div class="page-heading archive-heading reveal"><div><p class="eyebrow"><span class="dot"></span><span data-i18n="archive.eyebrow">Selected archive / 图片集</span></p><h2 data-i18n="archive.title">把生活<br /><em>一张张留下来。</em></h2></div><p class="heading-aside" data-i18n="archive.aside">个人生活、看现场和一些被保存下来的瞬间。</p></div>
+        <div class="archive-grid">
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/个人生活/IMG20260614140548.jpg" alt="个人生活照片" /><figcaption><span>01 / LIFE</span><strong>个人生活</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/个人生活/IMG20260620201124.jpg" alt="个人生活照片" /><figcaption><span>02 / LIFE</span><strong>个人生活</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/个人生活/IMG20260725173206.jpg" alt="个人生活照片" /><figcaption><span>03 / LIFE</span><strong>个人生活</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/个人生活/IMG20260829185358.jpg" alt="个人生活照片" /><figcaption><span>04 / LIFE</span><strong>个人生活</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/个人生活/mmexport1787880633815.jpg" alt="个人生活照片" /><figcaption><span>05 / LIFE</span><strong>个人生活</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/个人生活/ScreenShot_2026-10-01_234940_252.png" alt="个人生活照片" /><figcaption><span>06 / LIFE</span><strong>个人生活</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/个人生活/ScreenShot_2026-10-01_235244_117.png" alt="个人生活照片" /><figcaption><span>07 / LIFE</span><strong>个人生活</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/头像/mmexport1788420218292.jpg" alt="个人头像照片" /><figcaption><span>08 / PORTRAIT</span><strong>头像</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/看现场/IMG20251006173355_01.jpg" alt="看现场照片" /><figcaption><span>09 / LIVE</span><strong>看现场</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/看现场/IMG20260620200943.jpg" alt="看现场照片" /><figcaption><span>10 / LIVE</span><strong>看现场</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/看现场/IMG20260801201343.jpg" alt="看现场照片" /><figcaption><span>11 / LIVE</span><strong>看现场</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/看现场/IMG20260905204232.jpg" alt="看现场照片" /><figcaption><span>12 / LIVE</span><strong>看现场</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/看现场/IMG_20251007_123335.jpg" alt="看现场照片" /><figcaption><span>13 / LIVE</span><strong>看现场</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/看现场/MEITU_20251008_152853750.jpg" alt="看现场照片" /><figcaption><span>14 / LIVE</span><strong>看现场</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal"><img src="../../个人网页资料/图片集/看现场/MEITU_20251008_220526395.jpg" alt="看现场照片" /><figcaption><span>15 / LIVE</span><strong>看现场</strong></figcaption></figure>
+          <figure class="archive-card photo-card reveal reveal-delay"><img src="../../个人网页资料/图片集/看现场/ScreenShot_2026-10-01_235204_297.png" alt="看现场照片" /><figcaption><span>16 / LIVE</span><strong>看现场</strong></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="page" data-page="notes">
+        <div class="page-heading reveal"><p class="eyebrow"><span class="dot"></span><span data-i18n="notes.eyebrow">Notebook / 随笔</span></p><h2 data-i18n="notes.title">写给正在<br /><em>路上的自己。</em></h2></div>
+        <div class="notes-layout">
+          <div class="note-feature reveal"><span class="note-index">01</span><p class="note-date">2026.09.20</p><h3 data-i18n="notes.featureTitle">在很多事情之间，找到自己的节奏</h3><p class="note-body" data-i18n="notes.featureBody">大创、招新和未来规划一起到来的时候，焦虑也会跟着出现。那就先做眼前的事：去看一场现场，织几行毛线，读一点书，写几个字，再慢慢想清楚下一步。</p><a class="text-link" href="#notes" data-i18n="notes.readMore">继续记录 ↗</a></div>
+          <div class="note-list reveal reveal-delay"><article><span>02</span><div><p>2026.02.26</p><h3 data-i18n="notes.noteTwo">语言让陌生变得具体</h3></div><b>↗</b></article><article><span>03</span><div><p>2026.01.09</p><h3 data-i18n="notes.noteThree">把日子过成一张好看的照片</h3></div><b>↗</b></article><article><span>04</span><div><p>2025.12.22</p><h3 data-i18n="notes.noteFour">在德语课之外学习世界</h3></div><b>↗</b></article></div>
+        </div>
+        <div class="notes-footer"><span data-i18n="notes.footer">每一次记录，都是和自己打个照面。</span><a href="mailto:yiyi@example.com">yiyi@example.com</a></div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
